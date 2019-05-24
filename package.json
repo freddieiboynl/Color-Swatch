@@ -1,0 +1,21 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "fd5316ec-05d4-4ce4-a127-7496c5f33e71",
+		"displayName": "Color Swatch"
+	},
+	"author": "Freddie Iboy",
+	"name": "@framer/freddieboyframer.color-swatch",
+	"version": "1.5.0",
+	"dependencies": {
+		"nearest-pantone": "^1.0.1"
+	}
+}
