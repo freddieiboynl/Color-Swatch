@@ -2,8 +2,7 @@
 	"main": "dist/index.js",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/react": "^16.8",
-		"framer": "^1.0"
+		"@types/react": "^16.8"
 	},
 	"peerDependencies": {
 		"framer": "^1.0",
@@ -15,7 +14,7 @@
 	},
 	"author": "Freddie Iboy",
 	"name": "@framer/freddieboyframer.color-swatch",
-	"version": "1.9.0",
+	"version": "1.10.0",
 	"dependencies": {
 		"nearest-pantone": "^1.0.1"
 	}

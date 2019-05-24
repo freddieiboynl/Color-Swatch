@@ -5,7 +5,7 @@ Now you *never* have to create color swatches in a design tool *ever* again! Ins
 Bonus: In Preview mode, you can tap on each value to copy it to your clipboard so you can paste it anywhere. Just for you.
 
 ## Next:
-- [ ] Clean up component.
+- [ ] Doesn't work with Shared Colors. Change to allow variables.
 - [ ] Display closest CSS color name.
 - [ ] Display complimentary color suggestions.
 - [ ] Option for circular swatch.
@@ -14,7 +14,7 @@ Bonus: In Preview mode, you can tap on each value to copy it to your clipboard s
 
 ---
 
-- **Update 7**: Cleaner Readme, Removed dislplay options and added a better default size. You can still resize it however you want!
+- **Update 7**: Cleaner Readme, Removed display options and added a better default size. You can still resize it however you want!
 
 - **Update 6**: [This package is now on Github!](https://github.com/freddieiboynl/Color-Swatch) Contribute to this package and make it even better.
 
