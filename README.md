@@ -4,6 +4,8 @@ Bonus: In Preview mode, you can tap on each value to copy it to your clipboard s
 
 —
 
+Update 6: [This package is now on Github!](https://github.com/freddieiboynl/Color-Swatch). Contribute to this package and make it even better.
+
 Update 5: Massive visual refresh for better readability, copy and paste, and Pantone colors!
 
 Update 4: Update artwork just cuz
