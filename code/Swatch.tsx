@@ -49,6 +49,8 @@ export function Swatch(props) {
 }
 
 Swatch.defaultProps = {
+    height: 500,
+    width: 340,
     color: "#E23E24",
     fontSize: 40,
     displayOption: "hex",

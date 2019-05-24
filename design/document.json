@@ -51,8 +51,7 @@
                     "clip" : true,
                     "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                     "codeComponentProps" : {
-                      "color" : "rgba(37, 0, 22, 1.00)",
-                      "displayOption" : "cmyk"
+                      "color" : "rgba(37, 0, 22, 1.00)"
                     },
                     "codeOverrideEnabled" : false,
                     "constraintsLocked" : false,
@@ -196,8 +195,7 @@
                     "clip" : true,
                     "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                     "codeComponentProps" : {
-                      "color" : "rgba(163, 223, 229, 1.00)",
-                      "displayOption" : "cmyk"
+                      "color" : "rgba(163, 223, 229, 1.00)"
                     },
                     "codeOverrideEnabled" : false,
                     "constraintsLocked" : false,
@@ -341,8 +339,7 @@
                     "clip" : true,
                     "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                     "codeComponentProps" : {
-                      "color" : "rgba(198, 85, 158, 1.00)",
-                      "displayOption" : "cmyk"
+                      "color" : "rgba(198, 85, 158, 1.00)"
                     },
                     "codeOverrideEnabled" : false,
                     "constraintsLocked" : false,
@@ -486,8 +483,7 @@
                     "clip" : true,
                     "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                     "codeComponentProps" : {
-                      "color" : "rgba(233, 35, 113, 1.00)",
-                      "displayOption" : "cmyk"
+                      "color" : "rgba(233, 35, 113, 1.00)"
                     },
                     "codeOverrideEnabled" : false,
                     "constraintsLocked" : false,
@@ -1757,8 +1753,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                 "codeComponentProps" : {
-                  "color" : "hsl(274, 69%, 39%)",
-                  "displayOption" : "cmyk"
+                  "color" : "hsl(274, 69%, 39%)"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -1825,8 +1820,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                 "codeComponentProps" : {
-                  "color" : "rgba(248, 231, 239, 1.00)",
-                  "displayOption" : "cmyk"
+                  "color" : "rgba(248, 231, 239, 1.00)"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -1893,8 +1887,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                 "codeComponentProps" : {
-                  "color" : "rgba(163, 222, 229, 1.00)",
-                  "displayOption" : "cmyk"
+                  "color" : "rgba(163, 222, 229, 1.00)"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -1954,8 +1947,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                 "codeComponentProps" : {
-                  "color" : "rgba(198, 85, 158, 1.00)",
-                  "displayOption" : "cmyk"
+                  "color" : "rgba(198, 85, 158, 1.00)"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -2015,8 +2007,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
                 "codeComponentProps" : {
-                  "color" : "rgba(233, 36, 113, 1.00)",
-                  "displayOption" : "cmyk"
+                  "color" : "rgba(233, 36, 113, 1.00)"
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -2179,6 +2170,66 @@
         "top" : 2670,
         "visible" : true,
         "width" : 2531,
+        "widthType" : 0
+      },
+      {
+        "__class" : "CodeComponentNode",
+        "aspectRatio" : null,
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
+        "codeComponentProps" : {
+          "color" : "#E23E24"
+        },
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : false,
+        "fillGradient" : {
+          "__class" : "LinearGradient",
+          "alpha" : 1,
+          "angle" : 0,
+          "end" : "rgba(0,0,0,0)",
+          "start" : "black"
+        },
+        "fillImage" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 500,
+        "heightType" : 0,
+        "id" : "Gsh6Z_sUu",
+        "intrinsicHeight" : 500,
+        "intrinsicWidth" : 340,
+        "left" : -1759,
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "SBcSa2RGS",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 611,
+        "visible" : true,
+        "width" : 340,
         "widthType" : 0
       }
     ],
