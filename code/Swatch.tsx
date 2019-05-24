@@ -59,12 +59,6 @@ addPropertyControls(Swatch, {
         type: ControlType.Color,
         defaultValue: Swatch.defaultProps.color,
     },
-    displayOption: {
-        type: ControlType.Enum,
-        defaultValue: "cmyk",
-        options: ["hex", "rgba", "cmyk"],
-        optionTitles: ["HEX", "RGBA", "CMYK"],
-    },
 })
 
 function ColorBox({ color, colorString, colorAlpha }) {
