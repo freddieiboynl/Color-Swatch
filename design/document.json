@@ -707,7 +707,6 @@
             "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
             "navigationTransitionDirection" : "left",
             "opacity" : 1,
-            "originalFilename" : "",
             "originalid" : null,
             "parentid" : "VWgKEuOI_",
             "previewSettings" : null,
@@ -826,9 +825,7 @@
             "top" : null,
             "visible" : true,
             "width" : 275,
-            "widthType" : 0,
-            "x" : 444,
-            "y" : 998
+            "widthType" : 0
           },
           {
             "__class" : "TextNode",
@@ -930,9 +927,7 @@
             "top" : null,
             "visible" : true,
             "width" : 106,
-            "widthType" : 0,
-            "x" : 444,
-            "y" : 998
+            "widthType" : 0
           },
           {
             "__class" : "TextNode",
@@ -1022,9 +1017,7 @@
             "top" : null,
             "visible" : true,
             "width" : 151,
-            "widthType" : 0,
-            "x" : 444,
-            "y" : 998
+            "widthType" : 0
           },
           {
             "__class" : "FrameNode",
@@ -1074,7 +1067,6 @@
             "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
             "navigationTransitionDirection" : "left",
             "opacity" : 1,
-            "originalFilename" : "",
             "originalid" : null,
             "parentid" : "VWgKEuOI_",
             "previewSettings" : null,
@@ -1141,7 +1133,6 @@
             "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
             "navigationTransitionDirection" : "left",
             "opacity" : 1,
-            "originalFilename" : "",
             "originalid" : null,
             "parentid" : "VWgKEuOI_",
             "previewSettings" : null,
@@ -1208,7 +1199,6 @@
             "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
             "navigationTransitionDirection" : "left",
             "opacity" : 1,
-            "originalFilename" : "",
             "originalid" : null,
             "parentid" : "VWgKEuOI_",
             "previewSettings" : null,
@@ -1315,9 +1305,7 @@
             "top" : 114,
             "visible" : true,
             "width" : 248,
-            "widthType" : 0,
-            "x" : 444,
-            "y" : 998
+            "widthType" : 0
           },
           {
             "__class" : "FrameNode",
@@ -1367,7 +1355,6 @@
             "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
             "navigationTransitionDirection" : "left",
             "opacity" : 1,
-            "originalFilename" : "",
             "originalid" : null,
             "parentid" : "VWgKEuOI_",
             "previewSettings" : null,
@@ -1621,9 +1608,7 @@
                 "top" : null,
                 "visible" : true,
                 "width" : 16,
-                "widthType" : 0,
-                "x" : 25,
-                "y" : 34
+                "widthType" : 0
               }
             ],
             "clip" : true,
