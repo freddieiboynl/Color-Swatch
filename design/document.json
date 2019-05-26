@@ -1783,7 +1783,6 @@
             "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
             "navigationTransitionDirection" : "left",
             "opacity" : 1,
-            "originalFilename" : "",
             "originalid" : null,
             "parentid" : "VWgKEuOI_",
             "previewSettings" : null,
@@ -2166,6 +2165,73 @@
         "visible" : true,
         "width" : 100,
         "widthType" : 0
+      },
+      {
+        "__class" : "CodeComponentNode",
+        "aspectRatio" : null,
+        "bottom" : null,
+        "centerAnchorX" : 0.83187500000000003,
+        "centerAnchorY" : 0.92000000000000004,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
+        "codeComponentProps" : {
+          "color" : "hsla(0, 71%, 27%, 0.6)"
+        },
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+          {
+            "__class" : "ExportOptions",
+            "enabled" : true,
+            "nameExtension" : "",
+            "nameExtensionMode" : "Suffix",
+            "scale" : 1,
+            "type" : "png"
+          }
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : false,
+        "fillGradient" : {
+          "__class" : "LinearGradient",
+          "alpha" : 1,
+          "angle" : 0,
+          "end" : "rgba(0,0,0,0)",
+          "start" : "black"
+        },
+        "fillImage" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 464,
+        "heightType" : 0,
+        "id" : "P3ifaf82B",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "left" : 131,
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "SBcSa2RGS",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 1840,
+        "visible" : true,
+        "width" : 332,
+        "widthType" : 0
       }
     ],
     "id" : "SBcSa2RGS",
@@ -2173,11 +2239,29 @@
     "originalid" : null,
     "parentid" : null,
     "tokens" : {
+      "1caabed8-570d-411d-9c7c-6eb72d75a450" : {
+        "__class" : "ColorTokenNode",
+        "id" : "1caabed8-570d-411d-9c7c-6eb72d75a450",
+        "name" : "test2",
+        "value" : "rgba(185, 91, 91, 0.69)"
+      },
+      "9c33be7d-517a-4b63-8c10-effa2fe27626" : {
+        "__class" : "ColorTokenNode",
+        "id" : "9c33be7d-517a-4b63-8c10-effa2fe27626",
+        "name" : "test",
+        "value" : "rgba(138, 30, 30, 0.6)"
+      },
       "23f9e5d4-3e46-4bb3-9e1a-aac6328d8df3" : {
         "__class" : "ColorTokenNode",
         "id" : "23f9e5d4-3e46-4bb3-9e1a-aac6328d8df3",
         "name" : "swatchExample2",
         "value" : "rgb(233, 35, 113)"
+      },
+      "99d848df-a881-4fb1-99a2-4d52d4d3921e" : {
+        "__class" : "ColorTokenNode",
+        "id" : "99d848df-a881-4fb1-99a2-4d52d4d3921e",
+        "name" : "test3",
+        "value" : "rgba(186, 90, 90, 0.69)"
       },
       "e384c0cb-9dc7-46c0-af23-a107a34ff191" : {
         "__class" : "ColorTokenNode",
@@ -2188,7 +2272,10 @@
     },
     "tokensIndex" : [
       "e384c0cb-9dc7-46c0-af23-a107a34ff191",
-      "23f9e5d4-3e46-4bb3-9e1a-aac6328d8df3"
+      "23f9e5d4-3e46-4bb3-9e1a-aac6328d8df3",
+      "9c33be7d-517a-4b63-8c10-effa2fe27626",
+      "1caabed8-570d-411d-9c7c-6eb72d75a450",
+      "99d848df-a881-4fb1-99a2-4d52d4d3921e"
     ],
     "visible" : false
   },

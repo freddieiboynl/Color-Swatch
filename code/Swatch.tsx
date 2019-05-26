@@ -14,18 +14,17 @@ import { colors } from "./canvas"
 // TODO: add nice rgb label + toggle
 
 export function Swatch(props) {
-    function getFontColor() {
-        return "#000"
+    let mainColorToWorkWith = props.color
+    const allColorRegex = /(#([\da-f]{3}){1,2}|(rgb|hsl)a\((\d{1,3}%?,\s?){3}(1|0?\.\d+)\)|(rgb|hsl)\(\d{1,3}%?(,\s?\d{1,3}%?){2}\))/g
+
+    if (props.color.includes("var")) {
+        const extractedVarColor = allColorRegex.exec(props.color)
+        mainColorToWorkWith = extractedVarColor[0]
     }
 
-    function getKeyByValue(object, value) {
-        return Object.keys(object).find(key => object[key] === value)
-    }
+    console.log(mainColorToWorkWith)
 
-    // const testString =
-    //     'var(--token-0ae30532-d7fb-47d4-a10e-629f4b1967d4, rgb(30, 153, 164)) /* {"name":"oceanGreen"} */" '
-
-    const color = Color(props.color)
+    const color = Color(mainColorToWorkWith)
     const colorAlpha = color.a
     const hexColor = Color.toHex(color)
     const hexColorString = Color.toHexString(color)
