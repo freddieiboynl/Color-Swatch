@@ -5,11 +5,11 @@ Now you *never* have to create color swatches in a design tool *ever* again! Ins
 Bonus: In Preview mode, you can tap on each value to copy it to your clipboard so you can paste it anywhere. Just for you.
 
 ## Next:
-- [x] Doesn't work with Shared Colors. Change to allow variables.
-- [ ] Display closest CSS color name.
-- [ ] Display complimentary color suggestions.
-- [ ] Option for circular swatch.
-- [ ] Option to hide any piece of data if you don't need it for that project.
+- ~~Doesn't work with Shared Colors. Change to allow variables.~~
+- Display closest CSS color name.
+- Display complimentary color suggestions.
+- Option for circular swatch.
+- Option to hide any piece of data if you don't need it for that project.
 
 
 ---
