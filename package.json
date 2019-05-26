@@ -15,7 +15,7 @@
 	},
 	"author": "Freddie Iboy",
 	"name": "@framer/freddieboyframer.color-swatch",
-	"version": "1.14.0",
+	"version": "1.15.0",
 	"dependencies": {
 		"nearest-pantone": "^1.0.1"
 	}
