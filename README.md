@@ -5,14 +5,16 @@ Now you *never* have to create color swatches in a design tool *ever* again! Ins
 Bonus: In Preview mode, you can tap on each value to copy it to your clipboard so you can paste it anywhere. Just for you.
 
 ## Next:
-- [ ] Doesn't work with Shared Colors. Change to allow variables.
+- [x] Doesn't work with Shared Colors. Change to allow variables.
 - [ ] Display closest CSS color name.
 - [ ] Display complimentary color suggestions.
 - [ ] Option for circular swatch.
-- [ ] Optiont to hide any piece of data if you don't need it for that project.
+- [ ] Option to hide any piece of data if you don't need it for that project.
 
 
 ---
+
+- **Update 8** Added option to use and display shared colors! Now when you select your color token, the swatch will tell you it's provided name right underneath the alpha value in the top right.
 
 - **Update 7**: Cleaner Readme, Removed display options and added a better default size. You can still resize it however you want!
 

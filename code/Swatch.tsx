@@ -9,6 +9,7 @@ import {
 } from "framer"
 import { hexToCMYK, brightnessByColor } from "./Utils"
 const pant = require("nearest-pantone")
+import { colors } from "./canvas"
 
 // TODO: add nice rgb label + toggle
 
@@ -16,6 +17,13 @@ export function Swatch(props) {
     function getFontColor() {
         return "#000"
     }
+
+    function getKeyByValue(object, value) {
+        return Object.keys(object).find(key => object[key] === value)
+    }
+
+    // const testString =
+    //     'var(--token-0ae30532-d7fb-47d4-a10e-629f4b1967d4, rgb(30, 153, 164)) /* {"name":"oceanGreen"} */" '
 
     const color = Color(props.color)
     const colorAlpha = color.a
@@ -32,7 +40,7 @@ export function Swatch(props) {
     return (
         <Stack center size={"100%"} gap={0}>
             <ColorBox
-                color={color}
+                color={props.color}
                 colorString={hexColorString}
                 colorAlpha={colorAlpha}
             />
@@ -47,6 +55,18 @@ export function Swatch(props) {
         </Stack>
     )
 }
+// function getColorTokenName(token) {
+//     const myre = /\/\*.*?\*\//g
+//     const parsed = myre.exec(token)
+//     const parsed1 = parsed[0].replace(/\*\//g, "")
+//     const parsed2 = parsed1.replace(/\/\*/g, "")
+//     const parsedObject = JSON.parse(parsed2)
+//     const parsedName = parsedObject.name
+
+//     return parsedName
+// }
+
+// console.log(getColorTokenName(testString))
 
 Swatch.defaultProps = {
     height: 500,
@@ -65,22 +85,38 @@ addPropertyControls(Swatch, {
 
 function ColorBox({ color, colorString, colorAlpha }) {
     const alpha = Math.floor(colorAlpha * 100)
+
+    function getColorTokenName(token) {
+        const myre = /\/\*.*?\*\//g
+        const parsed = myre.exec(token)
+        const parsed1 = parsed[0].replace(/\*\//g, "")
+        const parsed2 = parsed1.replace(/\/\*/g, "")
+        const parsedObject = JSON.parse(parsed2)
+        const parsedName = parsedObject.name
+
+        return parsedName
+    }
+
     return (
         <Stack
             alignment={"end"}
+            direction={"vertical"}
             width={"100%"}
             height={"60%"}
             background={color}
+            distribution={"start"}
         >
             <Frame
                 background={null}
-                height={30}
-                width={150}
-                opacity={0.5}
+                height={20}
+                width={"100%"}
+                opacity={0.6}
                 style={{
+                    // flex: "0",
+                    // border: "1px solid red",
                     textAlign: "right",
                     marginTop: 10,
-                    marginRight: 10,
+                    // marginRight: 10,
                     fontSize: 16,
                     fontWeight: 800,
                     color:
@@ -88,7 +124,37 @@ function ColorBox({ color, colorString, colorAlpha }) {
                             ? "black"
                             : "white",
                 }}
-            >{`Alpha: ${alpha}%`}</Frame>
+            >
+                <p
+                    style={{ margin: 0, paddingRight: 20 }}
+                >{`Alpha: ${alpha}%`}</p>
+            </Frame>
+            {color.includes("name") ? (
+                <Frame
+                    background={null}
+                    height={20}
+                    width={"100%"}
+                    opacity={0.6}
+                    style={{
+                        // flex: "0",
+                        // border: "1px solid red",
+                        textAlign: "right",
+                        // marginTop: 10,
+                        // marginRight: 10,
+                        marginTop: 10,
+                        fontSize: 16,
+                        fontWeight: 800,
+                        color:
+                            brightnessByColor(colorString) > 127.5
+                                ? "black"
+                                : "white",
+                    }}
+                >
+                    <p
+                        style={{ margin: 0, paddingRight: 20 }}
+                    >{`Token: ${getColorTokenName(color)}`}</p>
+                </Frame>
+            ) : null}
         </Stack>
     )
 }
