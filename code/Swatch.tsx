@@ -9,9 +9,7 @@ import {
 } from "framer"
 import { hexToCMYK, brightnessByColor } from "./Utils"
 const pant = require("nearest-pantone")
-import { colors } from "./canvas"
-
-// TODO: add nice rgb label + toggle
+import { GradientSwatch } from "./GradientSwatch"
 
 export function Swatch(props) {
     let mainColorToWorkWith = props.color
@@ -22,7 +20,7 @@ export function Swatch(props) {
         mainColorToWorkWith = extractedVarColor[0]
     }
 
-    console.log(mainColorToWorkWith)
+    // console.log(mainColorToWorkWith)
 
     const color = Color(mainColorToWorkWith)
     const colorAlpha = color.a
@@ -37,35 +35,74 @@ export function Swatch(props) {
     }
 
     return (
-        <Stack center size={"100%"} gap={0}>
-            <ColorBox
-                color={props.color}
-                colorString={hexColorString}
-                colorAlpha={colorAlpha}
-            />
-            <ColorInfo
-                displayOption={props.displayOption}
-                parentWidth={props.width}
-                hex={hexColorString.toUpperCase()}
-                rgba={rgbColorString.toUpperCase()}
-                cmyk={hexToCMYK(hexColor)}
-                pantone={pantoneString}
-            />
-        </Stack>
+        <>
+            <Stack
+                mainColor={mainColorToWorkWith}
+                center
+                x={props.x}
+                height={"100%"}
+                width={props.width}
+                gap={0}
+            >
+                <ColorBox
+                    color={props.color}
+                    colorString={hexColorString}
+                    colorAlpha={colorAlpha}
+                />
+                <ColorInfo
+                    displayOption={props.displayOption}
+                    parentWidth={props.width}
+                    hex={hexColorString.toUpperCase()}
+                    rgba={rgbColorString.toUpperCase()}
+                    cmyk={hexToCMYK(hexColor)}
+                    pantone={pantoneString}
+                />
+            </Stack>
+        </>
     )
 }
-// function getColorTokenName(token) {
-//     const myre = /\/\*.*?\*\//g
-//     const parsed = myre.exec(token)
-//     const parsed1 = parsed[0].replace(/\*\//g, "")
-//     const parsed2 = parsed1.replace(/\/\*/g, "")
-//     const parsedObject = JSON.parse(parsed2)
-//     const parsedName = parsedObject.name
 
-//     return parsedName
+// if (props.goToColor !== undefined) {
+//     if (props.goToColor.length > 0) {
+//         return (
+//             <GradientSwatch
+//                 color1={mainColorToWorkWith}
+//                 color2={"#000"}
+//                 steps={3}
+//             />
+//         )
+//     } else {
+//         return (
+//             <>
+//                 <Stack
+//                     center
+//                     x={props.x}
+//                     height={"100%"}
+//                     width={props.width}
+//                     gap={0}
+//                 >
+//                     <ColorBox
+//                         color={props.color}
+//                         colorString={hexColorString}
+//                         colorAlpha={colorAlpha}
+//                     />
+//                     <ColorInfo
+//                         displayOption={props.displayOption}
+//                         parentWidth={props.width}
+//                         hex={hexColorString.toUpperCase()}
+//                         rgba={rgbColorString.toUpperCase()}
+//                         cmyk={hexToCMYK(hexColor)}
+//                         pantone={pantoneString}
+//                     />
+//                 </Stack>
+//             </>
+//         )
+//     }
 // }
 
-// console.log(getColorTokenName(testString))
+// {props.goToColor.length > 0 ? (
+//     <GradientSwatch children={props.goToColor} steps={3} />
+// ) : (
 
 Swatch.defaultProps = {
     height: 500,
@@ -80,6 +117,9 @@ addPropertyControls(Swatch, {
         type: ControlType.Color,
         defaultValue: Swatch.defaultProps.color,
     },
+    // goToColor: {
+    //     type: ControlType.ComponentInstance,
+    // },
 })
 
 function ColorBox({ color, colorString, colorAlpha }) {
@@ -111,11 +151,8 @@ function ColorBox({ color, colorString, colorAlpha }) {
                 width={"100%"}
                 opacity={0.6}
                 style={{
-                    // flex: "0",
-                    // border: "1px solid red",
                     textAlign: "right",
                     marginTop: 10,
-                    // marginRight: 10,
                     fontSize: 16,
                     fontWeight: 800,
                     color:
@@ -135,11 +172,7 @@ function ColorBox({ color, colorString, colorAlpha }) {
                     width={"100%"}
                     opacity={0.6}
                     style={{
-                        // flex: "0",
-                        // border: "1px solid red",
                         textAlign: "right",
-                        // marginTop: 10,
-                        // marginRight: 10,
                         marginTop: 10,
                         fontSize: 16,
                         fontWeight: 800,
@@ -248,32 +281,3 @@ function SingleColorLabel({ label }) {
         </>
     )
 }
-
-// <Stack
-//     center
-//     background={props.color}
-//     size={"100%"}
-//     borderRadius={"100%"}
-// >
-//     <Stack
-//         distribution={"center"}
-//         background={null}
-//         size={"100%"}
-//         alignment={"center"}
-//         style={{
-//             fontSize:
-//                 props.displayOption === "rgba" ||
-//                 props.displayOption === "cmyk"
-//                     ? props.width / 14
-//                     : props.width / 6,
-//             fontFamily: "sans-serif",
-//             fontWeight: 600,
-//             color:
-//                 brightnessByColor(hexColorString) > 127.5
-//                     ? "black"
-//                     : "white",
-//         }}
-//     >
-//         <p> {`${displayColor()}`}</p>
-//     </Stack>
-// </Stack>

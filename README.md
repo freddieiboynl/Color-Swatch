@@ -4,8 +4,11 @@ Now you *never* have to create color swatches in a design tool *ever* again! Ins
 
 Bonus: In Preview mode, you can tap on each value to copy it to your clipboard so you can paste it anywhere. Just for you.
 
+Bonus 2: A new component for getting automatic color gradient palette between 2 color swatches! Doesn't work with Shared Colors yet.
+
 ## Next:
 - ~~Doesn't work with Shared Colors. Change to allow variables.~~
+- ~~Add automatic gradient suggestions~~
 - Display closest CSS color name.
 - Display complimentary color suggestions.
 - Option for circular swatch.
@@ -13,7 +16,7 @@ Bonus: In Preview mode, you can tap on each value to copy it to your clipboard s
 
 
 ---
-
+- **Update 9** Added a new component to get a super nice mathematical gradient. Just connect 2  color watches on your canvas and choose how many `steps` you want between each color. wow wow wow
 - **Update 8** Added option to use and display shared colors! Now when you select your color token, the swatch will tell you it's provided name right underneath the alpha value in the top right.
 
 - **Update 7**: Cleaner Readme, Removed display options and added a better default size. You can still resize it however you want!
