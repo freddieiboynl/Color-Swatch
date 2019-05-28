@@ -2651,7 +2651,7 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
         "codeComponentProps" : {
-          "color" : "rgba(233, 36, 113, 1.00)"
+          "color" : "hsl(337, 32%, 48%)"
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -2718,7 +2718,7 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/Swatch.tsx_Swatch",
         "codeComponentProps" : {
-          "color" : "rgba(164, 223, 229, 1.00)"
+          "color" : "hsl(186, 48%, 49%)"
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
